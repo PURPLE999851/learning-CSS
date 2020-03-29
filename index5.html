@@ -4,38 +4,51 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<style type="text/css">
-			body{
-				font-size: 0;
-			}
 			.box{
 				width: 200px;
 				height: 200px;
-				background-color: red;
-				/*display: none;*/
-				display: inline-block;
+				border: 10px solid red;
+				text-align: justify;
+				padding: 20px;
+				margin: 40px;
 			}
 			.box2{
-				background-color: blue;
-				/*display: none;*/
-				display: inline-block;
-			} 
-			input{
-				width: 100px;
-				height: 100px;
-				display: block;
-				outline: none;  /*去掉轮廓*/
+				background-color: red;
+				width: 1200px;
+				overflow: hidden;
+			}
+			.box2 div{
+				width:280px;
+				text-align: center;
+				line-height: 200px;
+				color: #fff;
+				float: left;
+			}
+			.a{
+				border: 10px solid green;
+			}
+			.b{
+				border: 10px solid orange;
+			}
+			.c{
+				border: 10px solid deeppink;
+			}
+			.d{
+				border: 10px solid black ;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="box">我是一个文字我是一个文字我是一个文字我是一个文字我是一个文字我是一个文字</div>
 		
-		<div class="box">你好</div>
-		
-		<div class="box2">你好</div>
-		
-		<input type="text" name="" id="" value="" />
-		<input type="text" name="" id="" value="" />
+		<div class="box2">
+			<div class="a content">11</div>
+			<div class="b content">22</div>
+			<div class="c content">33</div>
+			<div class="d content">44</div>
+		</div>
+		<br />
+		<br />
+		<hr />
 	</body>
-	
-	
 </html>
