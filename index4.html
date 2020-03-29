@@ -2,21 +2,53 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>边框CSS</title>
+		<title></title>
 		<style type="text/css">
-		 	.box{
-		 		border: 1px solid red;
-		 		border-left: 20px solid blue;
-		 		border-top:  20px solid red;
-		 		border-bottom: 20px solid yellow: ;;
-		 	}	
+			.content{
+				width: 150px;
+				height: 150px;
+				background-color: #eee;
+				text-align: center;
+				line-height: 40px;
+				float: right;
+			}
+			.aa{
+				background-color: orange;
+			}
+			.bb{
+				background-color: blue;
+			}
+			.cc{
+				background-color: yellow;
+			}
+			.dd{
+				background-color: green;
+				clear:both;
+			}
+			.box{
+				border: 1px solid red;
+				overflow: hidden; 
+			}
+			h1{
+				border: 1px solid blue;
+				clear: both;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="box">
-			<h2>大家好</h2>
-			<h3>你好</h3>
-			<h4>我好</h4>
+			<div class="aa content">1</div>
+			<div class="bb content">2</div>
+			<div class="cc content">3</div>
+			<div class="dd content">4</div>
 		</div>
+		<h1>大家好我是H1</h1>
+		<div class="box">
+			<div class="aa content">11</div>
+			<div class="bb content">22</div>
+			<div class="cc content">33</div>
+			<div class="dd content">44</div>
+		</div>
+		
 	</body>
 </html>

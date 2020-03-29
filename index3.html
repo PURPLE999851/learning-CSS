@@ -3,53 +3,69 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<style >
-			table{
-				width: 300px;
-				height: 300px;
-				border: 1px solid red;
-				/*border-collapse:collapse ;*/
+		<style type="text/css">
+			.box{
+				width: 800px;
+				height: 600px;
+				background-color: #ddd;
+				font-size: 0;
+			}
+			.a{
+				width: 200px;
+				height: 600px;
+				background-color: blue; 
+				display: inline-block;
+			}
+			.b{
+				width: 400px;
+				height: 600px;
+				background-color: orange;
+				display: inline-block;
+			}
+			.c{  
+				width: 200px;
+				height: 600px;
+				background-color: green;
+				display: inline-block; 
+			}
+			.content{
+				width: 150px;
+				height: 150px;
+				background-color: #eee;
 				text-align: center;
+				line-height: 40px;
+				float: left;
+				float: right;
 			}
-			td{
-				border: 1px solid blue;
-				vertical-align: top;
+			.aa{
+				background-color: orange;
 			}
-			h3{
-				/*border: 1px solid red;
-				outline: 10px  dotted blue;*/
-				outline-width: 20px;
-				outline-color: red;
-				outline-style: dashed;
+			.bb{
+				background-color: blue;
 			}
-			h4{
-				width: 50%;
-				/*background-color: red;*/
-				border: 1px solid red;
-				box-shadow: 0 0 20px blue inset; 			
-				}
+			.cc{
+				background-color: yellow;
+			}
+			.dd{
+				background-color: green;
+			}
 		</style>
 	</head>
 	<body>
-		<table border="" cellspacing="" cellpadding="">
-		<tr>
-			<td>11</td>
-			<td>11</td>
-			<td>11</td>
-		</tr>
-		<tr>
-			<td>11</td>
-			<td>11</td>
-			<td>11</td>
-		</tr>
-		</tr>
-		<br />
-		
-		<h3>我是h3</h3>
-		</table>
+		<div class="box">	
+			<div class="a"></div>
+			<div class="b"></div>
+			<div class="c"></div>
+		</div>
 		
 		<br />
+		<br />
+		<hr />
+		<br />
+		<div class="aa content">1</div>
+		<div class="bb content">2</div>
+		<div class="cc content">3</div>
+		<div class="dd content">4</div>
 		
-		<h4>我是h4</h4>
 	</body>
 </html>
