@@ -2,53 +2,66 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>浮动解决方案</title>
 		<style type="text/css">
-			.box{
-				width: 200px;
-				height: 200px;
-				border: 10px solid red;
-				text-align: justify;
-				padding: 20px;
-				margin: 40px;
+			*{
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				color: #fff;
+				font-size: 30px;
 			}
-			.box2{
-				background-color: red;
-				width: 1200px;
+			.big{
 				overflow: hidden;
 			}
-			.box2 div{
-				width:280px;
-				text-align: center;
-				line-height: 200px;
-				color: #fff;
+			.box{
+				width: 1200px;
+				margin: 0 auto;
+				border: 1px solid black;
+				height: 800px;
+			}
+			.left{
+				width: 200px;
+				height: 400px;
+				background-color: red;
 				float: left;
 			}
-			.a{
-				border: 10px solid green;
+			.content{
+				height: 500px;
+				background-color: blue;
+				text-align: left;
+				line-height: 30px;
+				float: left;
+				width: 800px ;
 			}
-			.b{
-				border: 10px solid orange;
+			.right{
+				background-color: orange;
+				width: 200px;
+				height: 400px;
+				float: right;
 			}
-			.c{
-				border: 10px solid deeppink;
-			}
-			.d{
-				border: 10px solid black ;
+			.footer{
+				width: 800px;
+				height: 100px;
+				margin: 50px auto;
+				background-color: palevioletred;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="box">我是一个文字我是一个文字我是一个文字我是一个文字我是一个文字我是一个文字</div>
-		
-		<div class="box2">
-			<div class="a content">11</div>
-			<div class="b content">22</div>
-			<div class="c content">33</div>
-			<div class="d content">44</div>
+				<div class="big">
+				<div class="left">我是左边</div>
+		        <div class="content">
+				我是中间部分<br /><br /><br />
+				我是中间部分<br /><br /><br />
+				我是中间部分<br /><br /><br />
+				我是中间部分<br /><br /><br />
+				我是中间部分<br /><br /><br />
+				我是中间部分<br /><br /><br />
+			</div>			
+			<div class="right">我是右边</div>
+			</div>
+			<div class="footer">我是页脚</div>
 		</div>
-		<br />
-		<br />
-		<hr />
 	</body>
 </html>
